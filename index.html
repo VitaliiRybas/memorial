@@ -9,12 +9,7 @@
 <body>
 <div id="scale-wrapper">
 
-<div class="lang-container">
-  <div class="lang-active"></div>
-  <span class="lang ua">UA</span>
-  <span class="lang eng">ENG</span>
-</div>
-
+  
 <section class="hero-section">
   <h1 class="main-title">
     ГЕРОЇ<br><span>НЕ ВМИРАЮТЬ</span>
@@ -29,11 +24,6 @@
   </p>
 
   <button class="fire-button">Запалити вогник</button>
-
-  <div class="counter">
-    <div class="number" id="fireCount">0</div>
-    <div class="label" id="fireLabel">вогника<br>запалено<br>сьогодні</div>
-  </div>
 
   <div class="stars-container"></div>
 
@@ -53,7 +43,7 @@
         <div class="hero-bg"></div>
         <img class="hero-face" src="img/popov.png" alt="Юрій Попов">
       </div>
-      <h3>ЮРІЙ<br>ПОПОВ</h3>
+      <h3>ПОПОВ<br>ЮРІЙ</h3>
       <p>Випускник<br>181 Харчові технології</p>
     </div>
 
@@ -81,7 +71,7 @@
         <img class="hero-face" src="img/legky.png" alt="Легкий Богдан">
       </div>
       <h3>ЛЕГКИЙ<br>БОГДАН</h3>
-      <p>Випускник<br>051 Економіка, підприємництво та економічної безпеки</p>
+      <p>Випускник<br>051 Економіка»</p>
     </div>
 
     <div class="hero-card">
@@ -89,7 +79,7 @@
         <div class="hero-bg"></div>
         <img class="hero-face" src="img/galushka.png" alt="Валерій Галушка">
       </div>
-      <h3>ВАЛЕРІЙ<br>ГАЛУШКА</h3>
+      <h3>ГАЛУШКА<br>ВАЛЕРІЙ</h3>
       <p>Випускник<br>071 Облік і оподаткування</p>
     </div>
 
@@ -99,7 +89,7 @@
         <img class="hero-face" src="img/korniychuk.png" alt="Корнійчук Владислав">
       </div>
       <h3>КОРНІЙЧУК<br>ВЛАДИСЛАВ</h3>
-      <p>Випускник<br>181 Харчові технології</p>
+      <p>Випускник<br>071 Облік і оподаткування</p>
     </div>
 
     <div class="hero-card">
@@ -117,7 +107,7 @@
         <img class="hero-face" src="img/plysa.png" alt="Плиса Карен">
       </div>
       <h3>ПЛИСА<br>КАРЕН</h3>
-      <p>Випускник<br>073 Менеджмент</p>
+      <p>Студент<br>073 Менеджмент</p>
     </div>
   </div>
 </section>
@@ -171,10 +161,13 @@
     <h3>На цьому онлайн-меморіалі ви можете</h3>
     <div class="button-grid">
       <div class="button-item">
-        <button>
-          <img src="img/penсil.svg" alt="">
-          Залишити напис
-        </button>
+        <a href="https://forms.gle/P1bwdMMbAHhYnnUw6" target="_blank">
+  <button>
+    <img src="img/penсil.svg" alt="">
+    Залишити напис
+  </button>
+</a>
+
         <p>Можна записати кілька слів вдячності, скорботи чи спогадів. Кожен напис буде розміщено на спільній дошці пам’яті нашого сайту.</p>
       </div>
       <div class="button-item">
@@ -185,10 +178,13 @@
         <p>Натисніть, щоб запалити віртуальний вогник на згадку про наших героїв. Кожен вогник – це світло пам’яті, що не згасає.</p>
       </div>
       <div class="button-item">
-        <button>
-          <img src="img/user.svg" alt="">
-          Додати героя
-        </button>
+        <a href="https://forms.gle/Sd4JSw9wC9YAqM6K6" target="_blank">
+  <button>
+    <img src="img/user.svg" alt="">
+    Додати героя
+  </button>
+</a>
+
         <p>Якщо ви знаєте ім’я студента або випускника ХНТУ, який загинув, захищаючи Україну — будь ласка, поділіться інформацією. Ми хочемо, щоб жодне ім’я не залишилось поза пам’яттю.</p>
       </div>
     </div>
@@ -211,7 +207,6 @@
 
     <div class="footer-right">
   <img src="img/kntu-logo.svg" alt="ХНТУ логотип" class="kntu-logo" />
-  <p class="kntu-signature">Херсонський<br>національний технічний<br>університет</p>
 </div>
 
 
@@ -225,15 +220,17 @@
   </p>
   <p class="footer-right-text">© 2025 Херсонський національний технічний університет</p>
 </div>
+</footer>
+<img src="img/star-groupe.png" class="star-overlay" alt="Світіння" />
+<img src="img/star.svg" class="manual-star" alt="Star" style="display: none;" />
 
-
-<button onclick="resetStars()">Скинути вогники</button>
+</div>
 
 <script src="script.js"></script>
 
 <script>
   function applyScale() {
-    const designWidth = 1920; // базова ширина Figma-макету
+    const designWidth = 1920;
     const currentWidth = window.innerWidth;
     const scale = currentWidth / designWidth;
 
@@ -247,7 +244,6 @@
   window.addEventListener('load', applyScale);
   window.addEventListener('resize', applyScale);
 </script>
-</div>
 
 </body>
 </html>
