@@ -1,0 +1,723 @@
+@font-face {
+  font-family: 'NAMU';
+  src: url('fonts/NAMU-1910.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('fonts/e-Ukraine-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3B4F5C, #2B3942);
+  color: white;
+  font-family: 'NAMU', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main-title {
+  position: absolute;
+  top: 101px;
+  left: 699px;
+  width: 1109px;
+  height: 316px;
+  font-family: 'NAMU', sans-serif;
+  font-size: 144px;
+  line-height: 1.1;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.main-title span {
+  display: block;
+}
+
+.voin-1 {
+  position: absolute;
+  top: 283.75px;
+  left: 38.11px;
+  width: 506.2px;
+  height: 734.5px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-2 {
+  position: absolute;
+  top: 520.14px;
+  left: 38.11px;
+  width: 589.43px;
+  height: 512.66px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-3 {
+  position: absolute;
+  top: 387.9px;
+  left: 1393.39px;
+  width: 438.73px;
+  height: 660.8px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-4 {
+  position: absolute;
+  top: 512.77px;
+  left: 1119.79px;
+  width: 481.41px;
+  height: 527.4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.helicopter {
+  position: absolute;
+  top: -119.62px;
+  left: -142.53px;
+  width: 1348.46px;
+  height: 621.23px;
+  filter: blur(6px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dron {
+  position: absolute;
+  top: 111.06px;
+  left: 502.98px;
+  width: 199.69px;
+  height: 122.28px;
+  pointer-events: none;
+  z-index: 1;
+}
+@font-face {
+  font-family: 'NAMU';
+  src: url('fonts/NAMU-1910.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3B4F5C, #2B3942);
+  color: white;
+  font-family: 'NAMU', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main-title {
+  position: absolute;
+  top: 101px;
+  left: 699px;
+  width: 1109px;
+  height: 316px;
+  font-family: 'NAMU', sans-serif;
+  font-size: 144px;
+  line-height: 1.1;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.main-title span {
+  display: block;
+}
+
+.voin-1 {
+  position: absolute;
+  top: 283.75px;
+  left: 38.11px;
+  width: 506.2px;
+  height: 734.5px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-2 {
+  position: absolute;
+  top: 520.14px;
+  left: 38.11px;
+  width: 589.43px;
+  height: 512.66px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-3 {
+  position: absolute;
+  top: 327.9px;
+  left: 1393.39px;
+  width: 438.73px;
+  height: 660.8px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.voin-4 {
+  position: absolute;
+  top: 502.77px;
+  left: 1119.79px;
+  width: 481.41px;
+  height: 527.4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.helicopter {
+  position: absolute;
+  top: -119.62px;
+  left: -142.53px;
+  width: 1348.46px;
+  height: 621.23px;
+  filter: blur(6px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dron {
+  position: absolute;
+  top: 111.06px;
+  left: 502.98px;
+  width: 199.69px;
+  height: 122.28px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.subtitle {
+  position: absolute;
+  top: 137px;
+  left: 1152.24px;
+  width: 154px;
+  height: 108px;
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #F5FAFF;
+  text-align: left;
+  z-index: 2;
+}
+
+.description {
+  position: absolute;
+  top: 430.14px;
+  left: 710.07px;
+  width: 733px;
+  height: 58px;
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+  z-index: 2;
+}
+
+.lang-container {
+  position: absolute;
+  top: 110px;
+  right: 30px;
+  display: flex;
+  gap: 5px;
+  width: 116px;
+  height: 53px;
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #F5FAFF;
+}
+
+
+.lang {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+  user-select: none;
+  transition: color 0.25s ease;
+}
+
+.lang-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 53px;
+  background-color: #1357AB;
+  border-radius: 12px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.fire-button {
+  position: absolute;
+  top: 603.53px;
+  left: 712.07px;
+  width: 277px;
+  height: 53px;
+  background-color: #E3ECF7;
+  border: none;
+  border-radius: 12px;
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.fire-button:hover {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+
+.counter {
+  position: absolute;
+  top: 706.72px;
+  left: 757.38px;
+  width: 228px;
+  height: 158px;
+  font-family: 'e-Ukraine', sans-serif;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.counter .number {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  color: #F5FAFF;
+  text-align: left;
+  animation: none;
+}
+
+.counter .number.flash {
+  animation: flash 0.4s ease-in-out;
+}
+
+.counter .label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #F5FAFF;
+  opacity: 0.8;
+  text-align: left;
+}
+
+@keyframes flash {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.fallen-heroes {
+  margin-top: 1100px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 80px;
+  max-width: 1500px;
+}
+
+
+.hero-card {
+  text-align: left;
+  color: #F5FAFF;
+  font-family: 'e-Ukraine', sans-serif;
+}
+
+.hero-card img {
+  width: 280px;
+  height: 280px;
+  border-radius: 45px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero-card h3 {
+  font-family: 'NAMU', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+
+.hero-card p {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.hero-photo-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 0 20px 0;
+
+  padding: 4px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #DBEDFF, #3B4F5C);
+}
+
+.hero-photo-wrapper .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 45px;
+  display: none;
+}
+
+.hero-photo-wrapper .hero-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 45px;
+  z-index: 2;
+
+  background: #2B3942;
+}
+
+.tribute-section {
+  width: 100%;
+  padding: 80px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.tribute-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 40px;
+  max-width: 1600px;
+}
+
+.tribute-grid p {
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5FAFF;
+}
+
+.memory-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.memory-box {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  column-gap: 80px;
+  align-items: start;
+
+  width: 100%;
+  max-width: 1720px;
+  background: #F5FAFF;
+  border-radius: 36px;
+  padding: 64px 96px;
+}
+
+.memory-text-left h2 {
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+  color: #2B3942;
+}
+
+.memory-text-left .accent {
+  color: #1357AB;
+}
+
+.sub-accent {
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #0B5EC4;
+  margin-top: 8px;
+}
+
+.memory-text-right {
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2B3942;
+  max-width: 920px;
+}
+
+.memory-text-right p {
+  margin: 0 0 16px 0;
+}
+
+.memory-text-right p.accent-line {
+  color: #0B5EC4;
+  font-weight: 500;
+}
+
+.buttons-section {
+  padding: 100px 40px;
+  background: transparent;
+  font-family: 'e-Ukraine', sans-serif;
+  color: #F5FAFF;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-wrapper {
+  position: relative;
+  padding: 80px 60px 60px;
+  border: 1px solid #F5FAFF;
+  border-radius: 36px;
+  max-width: 1720px;
+  width: 100%;
+}
+
+.buttons-wrapper h3 {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 12px;
+  background-color: #2B3942;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.button-item {
+  text-align: left;
+  max-width: 460px;
+}
+
+.button-item button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #F5FAFF;
+  color: #2B3942;
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-item button:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
+
+.button-item button img {
+  width: 24px;
+  height: 24px;
+}
+
+.button-item p {
+  font-family: 'e-Ukraine', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #1357AB;
+  color: white;
+  font-family: 'e-Ukraine', sans-serif;
+  padding: 80px 60px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto 60px;
+}
+
+.footer-left h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.contact-line img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kntu-logo {
+  width: 300px;
+  margin-bottom: 12px;
+}
+
+.kntu-signature {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  width: max-content;
+  position: relative;
+  left: 75px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 40px auto 0;
+  padding-inline: 100px;
+  gap: 20px;
+  position: relative;
+}
+
+.footer-left-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 500px;
+  margin-left: -105px;
+  margin-top: 28px;
+}
+
+.footer-right-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  margin-left: 1010px;
+  top: 70%;
+  transform: translateX(50%) translateY(0);
+  white-space: nowrap;
+}
+
+.stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.star {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: none;
+  background-image: url('img/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+
+  filter: drop-shadow(0 0 12px #00aaff) drop-shadow(0 0 24px #00aaff);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.star {
+  animation: fadeIn 1s ease forwards, flicker 2s infinite;
+}
+
+#scale-wrapper {
+  transform-origin: top left;
+  width: 1920px;
+  height: auto;
+}
