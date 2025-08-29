@@ -205,13 +205,14 @@ html, body {
 
 .dron {
   position: absolute;
-  top: 111.06px;
-  left: 502.98px;
-  width: 199.69px;
-  height: 122.28px;
+  top: 80.49px;
+  left: 453.05px;
+  width: 299.54px;
+  height: 183.42px;
   pointer-events: none;
   z-index: 1;
 }
+
 
 .subtitle {
   position: absolute;
@@ -239,45 +240,6 @@ html, body {
   color: rgba(255, 255, 255, 0.6);
   text-align: left;
   z-index: 2;
-}
-
-.lang-container {
-  position: absolute;
-  top: 110px;
-  right: 30px;
-  display: flex;
-  gap: 5px;
-  width: 116px;
-  height: 53px;
-  font-family: 'e-Ukraine', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #F5FAFF;
-}
-
-
-.lang {
-  width: 53px;
-  height: 53px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 4;
-  user-select: none;
-  transition: color 0.25s ease;
-}
-
-.lang-active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 53px;
-  height: 53px;
-  background-color: #1357AB;
-  border-radius: 12px;
-  z-index: 2;
-  transition: all 0.3s ease;
 }
 
 .fire-button {
@@ -362,7 +324,6 @@ html, body {
   max-width: 1500px;
 }
 
-
 .hero-card {
   text-align: left;
   color: #F5FAFF;
@@ -386,22 +347,10 @@ html, body {
   margin-bottom: 8px;
 }
 
-
 .hero-card p {
   font-size: 16px;
   opacity: 0.8;
   line-height: 1.4;
-}
-
-.hero-photo-wrapper {
-  position: relative;
-  width: 280px;
-  height: 280px;
-  margin: 0 0 20px 0;
-
-  padding: 4px;
-  border-radius: 50px;
-  background: linear-gradient(135deg, #DBEDFF, #3B4F5C);
 }
 
 .hero-photo-wrapper .hero-bg {
@@ -414,17 +363,6 @@ html, body {
   z-index: 1;
   border-radius: 45px;
   display: none;
-}
-
-.hero-photo-wrapper .hero-face {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 45px;
-  z-index: 2;
-
-  background: #2B3942;
 }
 
 .tribute-section {
@@ -623,7 +561,7 @@ html, body {
 }
 
 .kntu-logo {
-  width: 300px;
+  width: 400px;
   margin-bottom: 12px;
 }
 
@@ -720,4 +658,36 @@ html, body {
   transform-origin: top left;
   width: 1920px;
   height: auto;
+}
+
+.star-overlay {
+  position: fixed;
+  top: -2%;
+  left: -11%;
+  width: 120vw;
+  height: auto;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.manual-star {
+  position: absolute;
+  top: -20px;
+  left: 120px;
+  width: 700px;
+  height: 700px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.9;
+  display: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 2.5s infinite ease-in-out;
 }
